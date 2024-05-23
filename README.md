@@ -1,10 +1,10 @@
 # Table of contents
-1. [[Overview](https://github.com/Astaruf/CombolistScraper/tree/main#overview)](https://github.com/Astaruf/CombolistScraper/?tab=readme-ov-file#overview)
-2. [[Features](https://github.com/Astaruf/CombolistScraper/tree/main#features)](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#features)
-3. [[Requirements](https://github.com/Astaruf/CombolistScraper/tree/main#requirements)](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#requirements)
-4. [[Installation](https://github.com/Astaruf/CombolistScraper/tree/main#installation)](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#installation)
-5. [[Configuration](https://github.com/Astaruf/CombolistScraper/tree/main#configuration)](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#configuration---configini)
-6. [[Usage](https://github.com/Astaruf/CombolistScraper/tree/main#usage)](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#usage)
+1. [Overview](https://github.com/Astaruf/CombolistScraper/?tab=readme-ov-file#overview)
+2. [Features](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#features)
+3. [Requirements](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#requirements)
+4. [Installation](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#installation)
+5. [Configuration](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#configuration---configini)
+6. [Usage](https://github.com/Astaruf/CombolistScraper/blob/main/README.md#usage)
    
 # Combolist Scraper
 
