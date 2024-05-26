@@ -38,4 +38,4 @@ Combolist Scraper is a Python program designed to scrape combolist files from sp
 3. Optional: Use `python wordlist_generator.py` to merge unique results and create new wordlists of usernames and passwords.
 
 ## DISCLAIMER
-Yes, downloading data leaks without the consent of the data owner is illegal!
+Yes, downloading data leaks without the consent of the data owner is illegal! Use this code at your own risk.
