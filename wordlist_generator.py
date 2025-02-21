@@ -1,22 +1,22 @@
 import os
 import codecs
 
-# Verifica se la cartella wordlists esiste, altrimenti la crea
+# Check if the 'wordlists' folder exists, otherwise create it
 if not os.path.exists("wordlists"):
     os.makedirs("wordlists")
 
-# Rinomina i file new se esistono
+# Rename the 'new' files if they exist
 if os.path.isfile("wordlists/new_users.txt"):
     if os.path.isfile("wordlists/old_users.txt"):
-        os.remove("wordlists/old_users.txt")  # Elimina il file di destinazione se esiste già
+        os.remove("wordlists/old_users.txt")  # Delete the destination file if it already exists
     os.rename("wordlists/new_users.txt", "wordlists/old_users.txt")
 
 if os.path.isfile("wordlists/new_passwords.txt"):
     if os.path.isfile("wordlists/old_passwords.txt"):
-        os.remove("wordlists/old_passwords.txt")  # Elimina il file di destinazione se esiste già
+        os.remove("wordlists/old_passwords.txt")  # Delete the destination file if it already exists
     os.rename("wordlists/new_passwords.txt", "wordlists/old_passwords.txt")
 
-# Verifica se i file old esistono e stampa un riepilogo
+# Check if the 'old' files exist and print a summary
 if os.path.isfile("wordlists/old_users.txt") and os.path.isfile("wordlists/old_passwords.txt"):
     with open("wordlists/old_users.txt", "r", encoding="utf-8") as old_users_file:
         total_old_users = sum(1 for line in old_users_file)
@@ -26,9 +26,9 @@ if os.path.isfile("wordlists/old_users.txt") and os.path.isfile("wordlists/old_p
         total_old_passwords = sum(1 for line in old_passwords_file)
         size_old_passwords = os.path.getsize("wordlists/old_passwords.txt")
 
-    print(f"Hai già un totale di {total_old_users} username ({size_old_users} bytes) e {total_old_passwords} password ({size_old_passwords} bytes).")
+    print(f"You already have a total of {total_old_users} usernames ({size_old_users} bytes) and {total_old_passwords} passwords ({size_old_passwords} bytes).")
 
-# Crea il file new_users.txt con gli username unici
+# Create the 'new_users.txt' file with unique usernames
 with open("wordlists/new_users.txt", "w", encoding="utf-8") as new_users_file:
     for root, dirs, files in os.walk("combolists"):
         for file_name in files:
@@ -40,7 +40,7 @@ with open("wordlists/new_users.txt", "w", encoding="utf-8") as new_users_file:
                     except IndexError:
                         pass
 
-# Crea il file new_passwords.txt con le password uniche
+# Create the 'new_passwords.txt' file with unique passwords
 with open("wordlists/new_passwords.txt", "w", encoding="utf-8") as new_passwords_file:
     for root, dirs, files in os.walk("combolists"):
         for file_name in files:
@@ -52,7 +52,7 @@ with open("wordlists/new_passwords.txt", "w", encoding="utf-8") as new_passwords
                     except IndexError:
                         pass
 
-# Stampare il riepilogo della grandezza dei file new
+# Print a summary of the size of the 'new' files
 with open("wordlists/new_users.txt", "r", encoding="utf-8") as new_users_file:
     total_users = sum(1 for line in new_users_file)
     size_users = os.path.getsize("wordlists/new_users.txt")
@@ -61,4 +61,4 @@ with open("wordlists/new_passwords.txt", "r", encoding="utf-8") as new_passwords
     total_passwords = sum(1 for line in new_passwords_file)
     size_passwords = os.path.getsize("wordlists/new_passwords.txt")
 
-print(f"Ora hai un totale di {total_users} username ({size_users} bytes) e {total_passwords} password ({size_passwords} bytes).")
+print(f"Now you have a total of {total_users} usernames ({size_users} bytes) and {total_passwords} passwords ({size_passwords} bytes).")
