@@ -41,4 +41,4 @@ Combolist Scraper is a Python program designed to scrape combolist files from sp
 Yes, downloading data leaks without the consent of the data owner is illegal! Use this code at your own risk.
 
 ## Contributors
-Thanks to nemmusu for precious contributions! :(
+Thanks to nemmusu for precious contributions! test
