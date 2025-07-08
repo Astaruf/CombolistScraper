@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# User-generated directories
+sessions/
+combolists/
+wordlists/
+
+# Configuration files (to avoid committing sensitive data)
+config/config.ini
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
