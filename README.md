@@ -33,12 +33,7 @@ Combolist Scraper is a Python program designed to scrape combolist files from sp
 - **Keywords**: Define keywords for targeted searches.
 
 ## Usage
-1. Run the program: `python combolist_scraper.py` to create a Telegram session and wait for the combolists download process to complete.
-2. Find downloaded combolists in the respective channel folders within the `combolists` directory.
-3. Optional: Use `python wordlist_generator.py` to merge unique results and create new wordlists of usernames and passwords.
+Run the program: `python main.py` to start CombolistScraper.
 
 ## DISCLAIMER
 Yes, downloading data leaks without the consent of the data owner is illegal! Use this code at your own risk.
-
-## Contributors
-@nemmusu Partially Verified
